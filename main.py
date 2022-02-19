@@ -1,16 +1,17 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from tkinter import *
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Main(Frame):
+    def __init__(self, root):
+        super(Main, self).__init__(root)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    root = Tk()
+    root["bg"] = "#fff"
+    root.geometry("485x550+200+200")
+    root.title("Calculator")
+    root.resizable(False, False)
+    app = Main(root)
+    app.pack()
+    root.mainloop()
