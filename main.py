@@ -7,6 +7,11 @@ class Main(Frame):
         self.build()
 
     def build(self):
+        self.formula = "0"
+        self.lbl = Label(text=self.formula, font=("Times New Roman", 21, "bold"),
+                         bg="#fff", foreground="#000")
+        self.lbl.place(x=11, y=50)
+
         btns = [
             "C", "DEL", "*", "=",
             "1", "2", "3", "/",
